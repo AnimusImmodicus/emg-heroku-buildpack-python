@@ -6,11 +6,11 @@ OUT_PREFIX=$1
 echo "Building SQLite..."
 
 
-SOURCE_TARBALL='https://www.sqlite.org/2015/sqlite-autoconf-3081101.tar.gz'
+SOURCE_TARBALL='http://ftp.osuosl.org/pub/blfs/conglomeration/sqlite/sqlite-autoconf-3080200.tar.gz'
 
 curl $SOURCE_TARBALL | tar xz
 # jx
-mv sqlite-autoconf-3070900 sqlite
+mv sqlite-autoconf-3080200 sqlite
 
 cd sqlite
 ./configure --prefix=$OUT_PREFIX
