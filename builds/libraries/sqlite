@@ -21,4 +21,4 @@ make install
 
 # Cleanup
 cd ..
-rm -fr sqlite
+# rm -fr sqlite (temporary)
