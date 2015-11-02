@@ -13,7 +13,8 @@ curl $SOURCE_TARBALL | tar xz
 mv sqlite-autoconf-3080600 sqlite
 
 cd sqlite
-export CFLAGS='-DSQLITE_ENABLE_COLUMN_METADATA'
+export CFLAGS="$CFLAGS -DSQLITE_ENABLE_COLUMN_METADATA=1"
+echo [TEST] SQLITE3 CFLAGS: $CFLAGS
 ./configure --prefix=$OUT_PREFIX
 make
 make install
